@@ -1,0 +1,232 @@
+body {
+    /* background-image: url('pakistan.jpg'); */
+    background-size: cover; /* This will make sure the background image covers the entire viewport */
+    background-position: center; /* This will center the background image */
+    margin: 0; /* This removes any default margin */
+    padding: 0; /* This removes any default padding */
+    height: 100vh; /* This sets the height of the body to 100% of the viewport height */
+}
+
+.date-and-time{
+    height: 50px;
+    width: 350px;
+    /* background-color: rgba(96, 148, 195, 0.6); */
+    background-color: rgb(207, 207, 207, 0.2);
+    margin: auto;
+    backdrop-filter: blur(4px);
+    border-radius: 40px;
+    position: absolute;
+    top: 50px; /* Adjust the distance from the top as needed */
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.date-and-time:hover{
+    /* background-color: rgba(132, 180, 223, 0.6); */
+    background-color: rgb(207, 207, 207, 0.3);
+}
+
+#time{
+    /* color: rgb(56, 56, 75); */
+    color: rgb(41, 41, 54);
+    font-weight: 600;
+    font-size: 30px;
+    margin-right: 40px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#date{
+    /* color: rgb(84, 97, 131); */
+    color: rgb(65, 73, 94);
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 22px;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.headline{
+    margin: auto; /* This will center the container horizontally */
+    position: absolute;
+    height: 150px;
+    width: 1600px;
+    top: -590px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: transparent;
+    text-align: center;
+    font-size: 100px;
+    color: azure;
+    border: none;
+    text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.5);
+}
+
+.box-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 550px;
+    width: 1600px;
+    margin: auto; /* This will center the container horizontally */
+    position: absolute;
+    top: 120px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.box{
+    height: 500px;
+    width: 350px;
+    /* background-color:rgba(97, 86, 86, 0.4); */
+    background-color: rgb(207, 207, 207, 0.2);
+    border-radius: 20px;
+    backdrop-filter: blur(4px);
+}
+
+#box1 .link-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    gap: 20px;
+}
+
+#box1 .link-container .link-box{
+    height: 70px;
+    width: 300px;
+    background-color: rgb(207, 207, 207, 0.2);
+    backdrop-filter: blur(4px);
+    border-radius: 12px;
+    border: none;
+    position: relative;
+    left: 50%;
+    bottom: 10%;
+    transform: translateX(-50%);
+    font-size: 20px;
+}
+
+.link-box img {
+    position: absolute; /* Position the favicon relative to the link-box */
+    left: 15px; /* Adjust the left position of the favicon */
+    top: 50%; /* Align the top of the favicon to the center of the link-box */
+    transform: translateY(-50%); /* Center the favicon vertically */
+    width: 30px; /* Set the width of the favicon */
+    height: auto; /* Maintain aspect ratio */
+}
+
+#box1 .link-container .link-box:hover{
+    background-color: rgb(207, 207, 207, 0.3);
+    cursor: pointer;
+}
+
+#box1 .link-button{
+    height: 50px;
+    width: 250px;
+    background-color: rgb(207, 207, 207, 0.2);
+    backdrop-filter: blur(4px);
+    border-radius: 12px;
+    border: none;
+    position: fixed; /* Position relative to the viewport */
+    bottom: 30px; /* Align to the bottom of the viewport */
+    left: 50%; /* Align horizontally centered */
+    transform: translateX(-50%); /* Center horizontally */
+    font-size: 20px;
+}
+
+#box1 .link-button:hover,
+#box2 .link-button:hover
+{
+    background-color: rgb(207, 207, 207, 0.3);
+    cursor: pointer;
+}
+
+#box1 .link-button:active,
+#box2 .link-button:active
+{
+    height: 48px;
+    width: 245px;
+}
+
+.link-container .weather-box{
+    height: 155px;
+    width: 300px;
+    margin-top: 30px;
+    background-color: rgb(207, 207, 207, 0.2);
+    backdrop-filter: blur(4px);
+    border-radius: 12px;
+    border: none;
+    position: relative;
+    left: 50%;
+    bottom: 10%;
+    transform: translateX(-50%);
+    font-size: 20px;
+}
+
+#box2 .link-button{
+    height: 50px;
+    width: 250px;
+    background-color: rgb(207, 207, 207, 0.2);
+    backdrop-filter: blur(4px);
+    border-radius: 12px;
+    border: none;
+    position: fixed; /* Position relative to the viewport */
+    bottom: 30px; /* Align to the bottom of the viewport */
+    left: 50%; /* Align horizontally centered */
+    transform: translateX(-50%); /* Center horizontally */
+    font-size: 20px;
+}
+
+.box:hover{
+    /* background-color:rgba(134, 118, 99, 0.4); */
+    background-color: rgb(207, 207, 207, 0.3);
+}
+
+.background-button{
+    height: 50px;
+    width: 250px;
+    /* background-color: rgba(21, 148, 165, 0.6); */
+    background-color: rgb(207, 207, 207, 0.2);
+    backdrop-filter: blur(4px);
+    border-radius: 40px;
+    border: none;
+    position: fixed; /* Position relative to the viewport */
+    bottom: 57px; /* Align to the bottom of the viewport */
+    left: 50%; /* Align horizontally centered */
+    transform: translateX(-50%); /* Center horizontally */
+    font-size: 20px;
+}
+
+.background-button:hover{
+    /* background-color: rgba(43, 176, 194, 0.6); */
+    background-color: rgb(207, 207, 207, 0.3);
+    cursor: pointer;
+}
+
+.background-button:active {
+    height: 47px;
+    width: 240px;
+}
+
+#box4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#box4 .text-area {
+    width: 83%;
+    height: 87%;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    background: rgb(207, 207, 207, 0.5);
+    font-family: 'Courier New', Courier, monospace;
+}
